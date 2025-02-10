@@ -18,8 +18,176 @@
     </script>
 </head>
 <body class="bg-gradient-custom min-h-screen text-white">
-    <!-- Header and other sections remain the same -->
-    
+    <!-- Header/Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-indigo-950 p-6 shadow-lg">
+        <nav class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <a href="#" class="flex items-center">
+                    <img src="./media/logo.png" alt="Recon1 Logo" class="h-12">
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-8 text-white">
+                <a href="#problem" class="hover:text-teal-400">The Problem</a>
+                <a href="#solution" class="hover:text-teal-400">The Solution</a>
+                <a href="#why-recon1" class="hover:text-teal-400">Why Recon1</a>
+                <a href="#team" class="hover:text-teal-400">Team</a>
+                <a href="#contact" class="hover:text-teal-400">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-5xl font-bold text-white mb-6">
+                Real time automated transaction reconciliation
+            </h1>
+            <p class="text-2xl text-gray-300 mb-8">
+                Transform your payment reconciliation from a complex burden into a streamlined, automated process that saves time and ensures accuracy.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Value Proposition -->
+    <section class="py-12 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-xl text-gray-300">
+                Turn payment reconciliation from a challenge into a competitive advantage. Recon1 combines intelligent automation with expert oversight to handle your high-volume transactions, ensuring accuracy and speed of processing.
+            </p>
+        </div>
+    </section>
+
+    <!-- The Problem -->
+    <section id="problem" class="py-20 px-6 bg-opacity-10 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="w-24 h-0.5 bg-teal-400 mx-auto mb-8"></div>
+            <h2 class="text-4xl font-bold text-white mb-12 text-center">The Problem</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Scale & Complexity -->
+                <div class="bg-indigo-900 bg-opacity-50 p-8 rounded-xl border border-teal-400/20">
+                    <h3 class="text-2xl font-bold text-white mb-6">Scale & Complexity</h3>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                        <li>Thousands of daily player transactions</li>
+                        <li>Multiple payment service providers</li>
+                        <li>Cross-border payments and multi-currency operations</li>
+                        <li>Complex bonus and promotion adjustments</li>
+                        <li>Time-critical withdrawals and deposits</li>
+                    </ul>
+                </div>
+
+                <!-- Business Impact -->
+                <div class="bg-indigo-900 bg-opacity-50 p-8 rounded-xl border border-teal-400/20">
+                    <h3 class="text-2xl font-bold text-white mb-6">Business Impact</h3>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                        <li>Player frustration from delayed deposits and withdrawals</li>
+                        <li>Customer churn due to poor payment experiences</li>
+                        <li>Revenue loss from unresolved discrepancies</li>
+                        <li>Hidden fees and incorrect PSP charges</li>
+                        <li>Compliance and audit risks</li>
+                        <li>High costs of maintaining internal reconciliation teams</li>
+                    </ul>
+                </div>
+
+                <!-- Industry Challenges -->
+                <div class="bg-indigo-900 bg-opacity-50 p-8 rounded-xl border border-teal-400/20">
+                    <h3 class="text-2xl font-bold text-white mb-6">Industry Challenges</h3>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                        <li>Legacy systems requiring expensive licenses (€80,000+ annually)</li>
+                        <li>Complex on-premises installations with lengthy implementation times</li>
+                        <li>Expensive Daily support costs often in excess of £1,400 a day</li>
+                        <li>Limited PSP integrations and automation capabilities</li>
+                        <li>Reliance on internal teams for exception handling</li>
+                        <li>Loss of institutional knowledge when key staff leave</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Solution -->
+    <section id="solution" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="w-24 h-0.5 bg-teal-400 mx-auto mb-8"></div>
+            <h2 class="text-4xl font-bold text-white mb-12 text-center">The Solution</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-indigo-900 bg-opacity-50 p-8 rounded-xl border border-teal-400/20">
+                    <h3 class="text-xl font-bold text-white mb-4">Automated Reconciliation</h3>
+                    <p class="text-gray-300">
+                        Process millions of transactions daily across multiple payment providers. Our automated system matches and reconciles payments as frequently as daily, eliminating backlog and minimising errors.
+                    </p>
+                </div>
+                
+                <div class="bg-indigo-900 bg-opacity-50 p-8 rounded-xl border border-teal-400/20">
+                    <h3 class="text-xl font-bold text-white mb-4">Rapid Exception Handling</h3>
+                    <p class="text-gray-300">
+                        Smart detection and routing of exceptions ensures rapid resolution. Our system identifies, categorises, and manages discrepancies automatically, maintaining processing efficiency.
+                    </p>
+                </div>
+                
+                <div class="bg-indigo-900 bg-opacity-50 p-8 rounded-xl border border-teal-400/20">
+                    <h3 class="text-xl font-bold text-white mb-4">Multi-Currency Support</h3>
+                    <p class="text-gray-300">
+                        Handle transactions across multiple fiat currencies and cryptocurrencies effortlessly. Our platform automatically manages exchange rates and reconciles across all currency types in real-time.
+                    </p>
+                </div>
+                
+                <div class="bg-indigo-900 bg-opacity-50 p-8 rounded-xl border border-teal-400/20">
+                    <h3 class="text-xl font-bold text-white mb-4">Seamless Integration</h3>
+                    <p class="text-gray-300">
+                        Connect to your existing systems in weeks, not months. Our cloud-native platform integrates effortlessly with your current infrastructure and payment providers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Recon1 -->
+    <section id="why-recon1" class="py-20 px-6 bg-opacity-10 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="w-24 h-0.5 bg-teal-400 mx-auto mb-8"></div>
+            <h2 class="text-4xl font-bold text-white mb-12 text-center">Why Recon1</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-indigo-900 bg-opacity-50 p-8 rounded-xl border border-teal-400/20">
+                    <h3 class="text-2xl font-bold text-white mb-6">The Old Way</h3>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                        <li>Manual reconciliation processes</li>
+                        <li>Expensive internal teams</li>
+                        <li>Days or weeks to resolve discrepancies</li>
+                        <li>Hidden PSP fees and errors</li>
+                        <li>High fixed license costs</li>
+                        <li>Complex on-premises installations</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-indigo-900 bg-opacity-50 p-8 rounded-xl border border-teal-400/20">
+                    <h3 class="text-2xl font-bold text-white mb-6">The Recon1 Way</h3>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                        <li>Fully automated reconciliation</li>
+                        <li>Expert-managed service</li>
+                        <li>Next-day exception resolution</li>
+                        <li>Full fee and reserve verification</li>
+                        <li>Volume-based pricing</li>
+                        <li>Cloud-native platform</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dataflow Section -->
+    <section id="dataflow" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="w-24 h-0.5 bg-teal-400 mx-auto mb-8"></div>
+            <h2 class="text-4xl font-bold text-white mb-12 text-center">Dataflow</h2>
+            <div class="bg-indigo-900 bg-opacity-50 p-8 rounded-xl border border-teal-400/20">
+                <img src="./media/Dataflow.svg" alt="Recon1 Dataflow Diagram" class="w-full">
+            </div>
+        </div>
+    </section>
+
     <!-- Team Section -->
     <section id="team" class="py-20 px-6">
         <div class="max-w-6xl mx-auto">
@@ -27,7 +195,7 @@
             <h2 class="text-4xl font-bold text-white mb-12 text-center">Our Team</h2>
             
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- Andy Davidson -->
+                <!-- Team Member 1 -->
                 <div class="bg-indigo-900 bg-opacity-50 p-8 rounded-xl border border-teal-400/20">
                     <div class="flex flex-col items-center">
                         <img src="./media/Andrew.png" alt="Andrew Davidson" class="w-48 h-48 rounded-full mb-4">
@@ -39,7 +207,7 @@
                     </div>
                 </div>
 
-                <!-- Jason Rogers -->
+                <!-- Team Member 2 -->
                 <div class="bg-indigo-900 bg-opacity-50 p-8 rounded-xl border border-teal-400/20">
                     <div class="flex flex-col items-center">
                         <img src="./media/Jason.png" alt="Jason Rogers" class="w-48 h-48 rounded-full mb-4">
@@ -47,23 +215,24 @@
                         <p class="text-teal-400 mb-4">Chief Technology Officer</p>
                         <p class="text-gray-300 text-center">
                             With 25 years in financial services and technology, Jason brings a unique blend of operational and technical expertise gained in senior leadership roles (including COO) at multiple multi-billion dollar hedge funds. He has architected enterprise-grade reconciliation solutions, transforming complex financial workflows through innovative technological implementations.
+
                         </p>
                     </div>
                 </div>
 
-                <!-- Stuart Sims -->
+                <!-- Team Member 3 -->
                 <div class="bg-indigo-900 bg-opacity-50 p-8 rounded-xl border border-teal-400/20">
                     <div class="flex flex-col items-center">
                         <img src="./media/Stuart.png" alt="Stuart Sims" class="w-48 h-48 rounded-full mb-4">
                         <h3 class="text-2xl font-bold text-white mb-2">Stuart Sims</h3>
                         <p class="text-teal-400 mb-4">Chief Financial Officer</p>
                         <p class="text-gray-300 text-center">
-                            A chartered accountant with global finance expertise, Stuart operates at board level delivering precise financial control and creating audit-ready financial records. His strategic vision transforms complex financial challenges into actionable business insights, particularly in high-transaction industries such as gaming.
+                            A chartered accountant with global finance expertise, Stuart operates at board level delivering precise financial control and creating audit-ready financial records. His strategic vision transforms complex financial challenges into actionable business insights, particularly in high-transaction industries such as gaming
                         </p>
                     </div>
                 </div>
 
-                <!-- Kevin Kearney -->
+                <!-- Team Member 4 -->
                 <div class="bg-indigo-900 bg-opacity-50 p-8 rounded-xl border border-teal-400/20">
                     <div class="flex flex-col items-center">
                         <img src="./media/Kevin.png" alt="Kevin Kearney" class="w-48 h-48 rounded-full mb-4">
@@ -71,6 +240,8 @@
                         <p class="text-teal-400 mb-4">Chief Operating Officer</p>
                         <p class="text-gray-300 text-center">
                             A reconciliation veteran with 28 years of finance experience, Kevin has pioneered PSP automation across multiple igaming companies. His teams deliver total transaction control and audit ready reconciliations. His expertise in operational efficiency and deep understanding of gaming financial complexities drives Recon1's operational strategy.
+
+
                         </p>
                     </div>
                 </div>
@@ -78,7 +249,27 @@
         </div>
     </section>
 
-    <!-- Rest of the website content remains the same -->
-    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="w-24 h-0.5 bg-teal-400 mx-auto mb-8"></div>
+            <h2 class="text-4xl font-bold text-white mb-12">Ready to transform your reconciliation process?</h2>
+            <div class="max-w-4xl mx-auto bg-white/10 p-8 rounded-xl backdrop-blur-sm">
+                <!-- Pipedrive Web Form -->
+                <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/czLSPXr7RRR2fzD2HvcYnv5oFkGRZyT9iRq6FeE5FjdBirQGa3tK9G594kUobXP0vV">
+                    <script src="https://webforms.pipedrive.com/f/loader"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 bg-black/20">
+        <div class="max-w-6xl mx-auto text-center text-gray-400">
+            <p>&copy; 2025 Recon1 Limited. All rights reserved.</p>
+            <p class="mt-2 text-sm">Registered Address: Port Salus Business Centre 3rd Floor, 63a Blundell Street, Liverpool, United Kingdom, L1 0AJ</p>
+            <p class="mt-1 text-sm">Registered in the United Kingdom | Company No. 16053241</p>
+        </div>
+    </footer>
 </body>
 </html>
