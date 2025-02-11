@@ -18,8 +18,8 @@ $sourceTextFiles = @(
 )
 
 $destinationGDocFiles = @(
-    "G:\Shared drives\Recon1\Recon1 - Website.txt",
-    "G:\Shared drives\Recon1\Recon1 - Investor Deck.txt"
+    "G:\Shared drives\Recon1\Recon1 - Website.gdoc",
+    "G:\Shared drives\Recon1\Recon1 - Investor Deck.gdoc"
 )
 
 # Ensure the number of source and destination files match
