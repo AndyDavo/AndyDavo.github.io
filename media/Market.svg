@@ -27,7 +27,7 @@
     <!-- SAM Circle -->
     <circle cx="400" cy="300" r="150" fill="url(#samGradient)" stroke="#2DD4BF" stroke-width="2"/>
     <text x="400" y="190" text-anchor="middle" fill="white" font-size="24" font-weight="bold">SAM £21M</text>
-    <text x="400" y="215" text-anchor="middle" fill="#D1D5DB" font-size="14">European Market</text>
+    <text x="400" y="215" text-anchor="middle" fill="#D1D5DB" font-size="14">European Reconciliation Market</text>
 
     <!-- SOM Circle -->
     <circle cx="400" cy="300" r="70" fill="url(#somGradient)" stroke="#F59E0B" stroke-width="2"/>
