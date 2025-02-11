@@ -6,8 +6,8 @@ $SourceFile1 = "C:\localhost\recon1\index.html"
 $SourceFile2 = "C:\localhost\recon1\InvestorDeck.html"
 
 # Destination files (replace with your desired destination paths)
-$DestFile1 = "G:\Shared drives\Recon1\Recon1 - Website"
-$DestFile2 = "G:\Shared drives\Recon1\Recon1 - Investor Deck"
+$DestFile1 = "G:\Shared drives\Recon1\Recon1 - Website.txt"
+$DestFile2 = "G:\Shared drives\Recon1\Recon1 - Investor Deck.txt"
 
 # Perform the file copies
 try {
