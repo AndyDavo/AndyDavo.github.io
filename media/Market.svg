@@ -22,7 +22,7 @@
     <circle cx="400" cy="300" r="250" fill="url(#tamGradient)" stroke="#67E8F9" stroke-width="2"/>
     <text x="400" y="85" text-anchor="middle" fill="white" font-size="24" font-weight="bold">TAM £1B+</text>
     <text x="400" y="110" text-anchor="middle" fill="#D1D5DB" font-size="14">Global Online Gambling</text>
-    <text x="400" y="130" text-anchor="middle" fill="#D1D5DB" font-size="14">Reconciliation Market</text>
+    <text x="400" y="130" text-anchor="middle" fill="#D1D5DB" font-size="14">Accounting Market</text>
 
     <!-- SAM Circle -->
     <circle cx="400" cy="300" r="150" fill="url(#samGradient)" stroke="#2DD4BF" stroke-width="2"/>
