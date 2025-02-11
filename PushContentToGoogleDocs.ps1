@@ -1,67 +1,51 @@
-# File Copy Script
-# Usage: Specify the source and destination file paths
+# Simple Script to Convert HTML to Google Docs .gdoc
 
-# Source files (replace with your actual file paths)
-#$SourceFile1 = "C:\localhost\recon1\index.html"
-#$SourceFile2 = "C:\localhost\recon1\InvestorDeck.html"
-
-# Destination files (replace with your desired destination paths)
-#$DestFile1 = "G:\Shared drives\Recon1\Recon1 - Website.txt"
-#$DestFile2 = "G:\Shared drives\Recon1\Recon1 - Investor Deck.txt"
-
-# Script to copy contents of two text files to Google Docs .gdoc files
-
-# Define source and destination file paths
-$sourceTextFiles = @(
+# Source and destination files
+$sourceFiles = @(
     "C:\localhost\recon1\index.html",
     "C:\localhost\recon1\InvestorDeck.html"
 )
 
-$destinationGDocFiles = @(
+$destFiles = @(
     "G:\Shared drives\Recon1\Recon1 - Website.gdoc",
     "G:\Shared drives\Recon1\Recon1 - Investor Deck.gdoc"
 )
 
-# Ensure the number of source and destination files match
-if ($sourceTextFiles.Count -ne $destinationGDocFiles.Count) {
-    Write-Host "Error: The number of source and destination files must be the same."
+# Ensure equal number of files
+if ($sourceFiles.Count -ne $destFiles.Count) {
+    Write-Host "Error: Number of source and destination files must match!" -ForegroundColor Red
     exit
 }
 
 # Process each file
-for ($i = 0; $i -lt $sourceTextFiles.Count; $i++) {
+for ($i = 0; $i -lt $sourceFiles.Count; $i++) {
     try {
-        # Read the contents of the source text file
-        $fileContents = Get-Content -Path $sourceTextFiles[$i] -Raw -ErrorAction Stop
-
-        # Create the Google Docs JSON structure
-        $gDocContent = @{
-            "url" = ""
-            "doc_name" = (Get-Item $sourceTextFiles[$i]).BaseName
-            "doc_type" = "document"
-            "mime_type" = "application/vnd.google-apps.document"
-            "content" = $fileContents
-        } | ConvertTo-Json
-
-        # Write the contents to the .gdoc file
-        $gDocContent | Set-Content -Path $destinationGDocFiles[$i] -Encoding UTF8 -ErrorAction Stop
-
-        # Confirm the file was created
-        if (Test-Path $destinationGDocFiles[$i]) {
-            Write-Host "Successfully copied $($sourceTextFiles[$i]) to $($destinationGDocFiles[$i])"
-        } else {
-            Write-Host "Error: Could not create file $($destinationGDocFiles[$i])"
+        # Check if source file exists
+        if (-not (Test-Path $sourceFiles[$i])) {
+            Write-Host "Source file not found: $($sourceFiles[$i])" -ForegroundColor Yellow
+            continue
         }
+
+        # Read file content efficiently
+        $content = [System.IO.File]::ReadAllText($sourceFiles[$i])
+
+        # Create simple JSON structure
+        $gdocContent = @{
+            "file_name" = (Split-Path $sourceFiles[$i] -Leaf)
+            "mime_type" = "application/vnd.google-apps.document"
+            "content" = $content
+        } | ConvertTo-Json -Compress
+
+        # Write to destination
+        $gdocContent | Set-Content -Path $destFiles[$i] -Encoding UTF8
+
+        Write-Host "Converted $($sourceFiles[$i]) to $($destFiles[$i])" -ForegroundColor Green
     }
     catch {
-        Write-Host "Error processing file $($sourceTextFiles[$i]): $($_.Exception.Message)"
+        Write-Host "Error converting $($sourceFiles[$i]): $($_.Exception.Message)" -ForegroundColor Red
     }
 }
 
+Write-Host "Conversion complete." -ForegroundColor Cyan
 
-return 0
-
-
-
-
-
+return 0 
