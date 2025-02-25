@@ -11,23 +11,47 @@
 - Working Directory: c:/reactprojects/pensionable.ai
 
 ## Project Patterns
-TBD - To be documented as patterns emerge during development
+- ES Modules used throughout the project
+- PostCSS config must use .cjs extension due to ES modules
+- Tailwind config must use ES module syntax
+- Component organization follows feature-based structure
+- Consistent use of gradient backgrounds for section differentiation
+- Mobile-first responsive design with md (768px) and lg (1024px) breakpoints
 
 ## User Preferences
-TBD - To be documented as preferences are identified
+- Preference for whitespace and clean design
+- Standard top navigation with dropdowns
+- Hamburger menu for mobile navigation
+- No animations/transitions requested
+- Gradient backgrounds for visual interest
 
 ## Critical Paths
-TBD - To be documented as implementation paths are established
+- Navigation structure defined in src/routes.tsx
+- Layout component in src/components/layout/Layout.tsx handles all page structure
+- Brand colors and typography defined in tailwind.config.js
+- Global styles and components defined in src/index.css
 
 ## Known Challenges
-TBD - To be documented as challenges are encountered
+- PostCSS and ES modules compatibility requires .cjs extension
+- Multiple development servers may run on different ports
+- Image placeholders need proper implementation
+- Form submission handling pending backend integration
 
 ## Tool Usage Patterns
-TBD - To be documented as tool usage patterns emerge
+- Use write_to_file for new files
+- Use replace_in_file for targeted changes
+- Use execute_command for npm operations
+- Check terminal output for development server status
 
 ## Evolution Notes
-- Initial setup: Created Memory Bank structure with core documentation files
-- Future updates will track project evolution and key decisions
+- Initial setup: Created Memory Bank structure with core documentation
+- Implemented Information Architecture with placeholder content
+- Set up responsive navigation and layout
+- Established brand-compliant design system
 
 ## Learning Points
-TBD - To be documented as insights are gained during development
+- ES modules require specific file extensions (.cjs for CommonJS)
+- Tailwind configuration needs ES module syntax when type: "module"
+- PostCSS configuration must remain in CommonJS format
+- Component organization benefits from feature-based structure
+- Gradient backgrounds provide visual interest while maintaining clean design

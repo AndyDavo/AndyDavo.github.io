@@ -5,5 +5,45 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    @apply font-inter text-grey bg-white;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat text-navy;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply rounded-button px-4 py-2 font-medium transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-teal text-white hover:bg-teal/90;
+  }
+
+  .btn-secondary {
+    @apply bg-purple text-white hover:bg-purple/90;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-card p-6;
+  }
+
+  .container {
+    @apply mx-auto px-4 max-w-7xl;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+}
+
+/* Brand gradient backgrounds */
+.bg-gradient-brand {
+  background: linear-gradient(135deg, #051966 0%, #BF2FCF 50%, #3FBAD4 100%);
+}
+
+.bg-gradient-light {
+  background: linear-gradient(135deg, rgba(5,25,102,0.05) 0%, rgba(191,47,207,0.05) 50%, rgba(63,186,212,0.05) 100%);
 }

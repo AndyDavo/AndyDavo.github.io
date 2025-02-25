@@ -9,6 +9,8 @@ The marketing site is going to be built using react and tailwind with typescript
 
 We will use github for sourcecode control and deploy to amazon S3
 
+When building website content or user interfaces refer to the "brandguidelines.md" document in the memory bank.
+
 
 ## Core Requirements
 TBD - To be defined based on project specifications
